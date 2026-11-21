@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My second web page </title>
+    </head>
+    <body>
+        <h1>Pages</h1>
+        <p>Lorem ipsum dolor, <br>sit amet <b>
+        consectetur </b>badipisicing elit.<br> Culpa <hr>sapiente ab beatae eius ipsa, <i>voluptas <mark>Haider Ali
+        </mark>excepturi magnam nobis id <u>molestias deleniti quae</u> recusandae <del>Name</del> nulla veritatis quaerat possimus.</i> Magnam, asperiores labore? 
+        <small>haider ali khans</small>
+    </p>
+    <ul type="square">
+      <li>Advance Java</li>
+      <li>C++ </li>
+      <li>Javascript </li>  
+    </ul>
+    <ol type="a">
+        <li>Python </li>
+        <li>Power BI </li>
+        <li>API </li>
+    </ol>
+    </body>
+</html>
+<!-- Table start -->
+<table border="1" height="300" width="500" cellpadding="20" cellspacing="0" bgcolor="pink" align="left" frame="box" bordercolor="Black">
+    <caption>Student Details</caption>
+    <tr bgcolor="white">
+        <th>S.NO</th>
+        <th bgcolor="yellow">Name</th>
+        <th>Subject</th>
+        <th>Class</th>
+        <th>Room No</th>
+    </tr>
+    <tr bgcolor="white" align="center">
+        <td>1</td>
+        <td>Asad</td>
+        <td>Science</td>
+        <td>10th</td>
+        <td>121</td>
+    </tr>
+    <tr align="center">
+        <td>2</td>
+        <td bgcolor="Orange">Amir</td>
+        <td>Science</td>
+        <td>10th</td>
+        <td>122</td>
+    </tr>
+    <tr align="center" bgcolor="green">
+        <td>3</td>
+        <td>Asif</td>
+        <td>English</td>
+        <td>11th</td>
+        <td>123</td>
+    </tr>
+</table>
+<!-- form start from here -->
+ <br clear="all">
+<main>
+    <!-- Section One -->
+    <section>
+        <div>
+            <h1>Student Registration Form</h1>
+        </div>
+    </section>
+</main>
+
+<!-- Basic Form Inputs -->
+<form action="/submit" method="post" autocomplete="on">
+    <label>Name:</label>
+    <input type="text"><br><br>
+
+    <label>Mob NO:</label>
+    <input type="number"><br><br>
+
+    <label for="">Email:</label>
+    <input type="email" placeholder="Enter your Email" required><br><br>
+
+    <label for="">Password:</label>
+    <input type="password" placeholder="Enter your password" required min="5" max="20" minlength="10" maxlength="20"><br><br>
+
+    <label for="file">Upload file</label>
+    <input type="file" name="file"><br><br>
+
+    <label for="">D.O.B:</label>
+    <input type="date"><br><br>
+
+    <label for="">Time:</label>
+    <input type="time"><br><br>
+
+    <input type="color"><br><br>
+
+    <label for="">range:</label>
+    <input type="range"><br><br>
+
+    <label for="">Search:</label>
+    <input type="search"><br><br>
+
+    <h2>Gender:</h2>
+    <label for="">Male</label>
+    <input type="radio" name="gender" value="gender">
+    <label for="">female</label>
+    <input type="radio" name="gender" value="female"><br><br>
+
+    <h2>Hobbies:</h2>
+    <label for="">coding</label>
+    <input type="checkbox">
+    <label for="">cooking</label>
+    <input type="checkbox">
+    <label for="">siwmming</label>
+    <input type="checkbox">
+    <label for="">dancing</label>
+    <input type="checkbox">
+    <label for="">singing</label>
+    <input type="checkbox"><br><br>
+
+    <label for="city">Select City:</label>
+    <select name="city">
+        <option value="">Rampur</option>
+        <option value="">Moradabad</option>
+        <option value="">Amroha</option>
+        <option value="">Rampur</option>
+        <option value="">Bareilly</option>
+        <option value="">Sambhal</option>
+    </select>
+</form>
+
+<br><br>
+
+<!-- Fieldset 1: Personal Details -->
+<fieldset>
+    <legend>Personal details:</legend>
+    <label>Name:</label>
+    <input type="text"><br><br>
+    
+    <label>Mob NO:</label>
+    <input type="number"><br><br>
+    
+    <label for="">Email:</label>
+    <input type="email" placeholder="Enter your Email" required><br><br>
+</fieldset>
+
+<br><br>
+
+<!-- Datalist Example -->
+<label for="">choose course:</label>
+<input list="courses" name="course">
+<datalist id="courses">
+    <option value="">HTML</option>
+    <option value="">CSS</option>
+    <option value="">java</option>
+    <option value="">.net</option>
+    <option value="">C++</option>
+</datalist>
+<br><br>
+
+<button type="submit">Submit</button>
+
+<br><br><br>
+
+<!-- Fieldset 2: Detailed Registration Form -->
+<form action="/register" method="POST">
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digit number"><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Educational Information</legend>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Choose Course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="js"> JavaScript<br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter address"></textarea>
+    </fieldset>
+</form>

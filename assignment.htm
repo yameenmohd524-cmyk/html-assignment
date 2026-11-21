@@ -1,0 +1,278 @@
+<!DOCTYPEDOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 30. Add metadata using meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Practice Assignment Solution">
+    
+    <!-- 2. Title -->
+    <title>My First Web Page</title>
+</head>
+<body>
+
+    <!-- 35. Use <header> tag -->
+    <header id="top">
+        <!-- 25 & 36. Navigation bar using <nav> tag -->
+        <nav>
+            <a href="#basic">Basic Level</a> | 
+            <a href="#intermediate">Intermediate Level</a> | 
+            <a href="#advanced">Advanced Level</a> | 
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
+
+    <hr> <!-- 27. <hr> tag to separate content -->
+
+    <!-- 39. Table of Contents -->
+    <section>
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#basic">Basic Level Questions (1-10)</a></li>
+            <li><a href="#intermediate">Intermediate Level Questions (11-30)</a></li>
+            <li><a href="#advanced">Advanced Level Questions (31-50)</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- 26 & 28. HTML comment explaining section & <section> tag -->
+    <!-- SECTION 1: BASIC LEVEL (Questions 1 to 10) -->
+    <section id="basic">
+        <!-- 3. Heading -->
+        <h1>Welcome to HTML</h1>
+
+        <!-- 4, 5, 10. Paragraph with introduction, <br>, <strong>, and <em> tags -->
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>. It is used to create the structure of web pages.<br>
+            Learning HTML is the <em>first step</em> in web development.
+        </p>
+
+        <!-- 6. Unordered List -->
+        <h3>Technologies:</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <!-- 7. Ordered List -->
+        <h3>Steps to Learn:</h3>
+        <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ol>
+
+        <!-- 8. Image with alt text -->
+        <h3>Sample Image:</h3>
+        <img src="image.jpg" alt="Sample Image" width="200">
+
+        <!-- 9. Hyperlink to Google -->
+        <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 2: INTERMEDIATE LEVEL (Questions 11 to 30) -->
+    <section id="intermediate">
+        <h2>Intermediate Level</h2>
+
+        <!-- 11, 12, 13, 45. Table with Name, Age, Country, colspan, and <th> tags -->
+        <h3>Student Details Table</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Mohd Yameen</td>
+                <td>21</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <!-- 13. colspan merging two columns -->
+                <td colspan="2">Merged Cell (Name & Age)</td>
+                <td>India</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- 23. <div> tag to create a content section -->
+        <div>
+            <!-- 21. <fieldset> and <legend> to group related form fields -->
+            <!-- 14, 15, 16, 17, 18, 19, 20, 22, 37, 43. Form implementation with all inputs -->
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Contact Form & User Information</legend>
+
+                    <!-- 16. <label> tag -->
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="password" required><br><br>
+
+                    <!-- 22. <input type="date"> field -->
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob"><br><br>
+
+                    <!-- 17. Dropdown list with five country options -->
+                    <label for="country">Country:</label><br>
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select><br><br>
+
+                    <!-- 18. Radio button group for gender -->
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br><br>
+
+                    <!-- 19. Checkbox group for selecting hobbies -->
+                    <label>Hobbies:</label><br>
+                    <input type="checkbox" id="coding" name="hobby" value="coding">
+                    <label for="coding">Coding</label>
+                    <input type="checkbox" id="reading" name="hobby" value="reading">
+                    <label for="reading">Reading</label><br><br>
+
+                    <!-- 38. <datalist> element for auto-suggestions -->
+                    <label for="course">Search Course:</label><br>
+                    <input list="courses" id="course" name="course">
+                    <datalist id="courses">
+                        <option value="HTML5">
+                        <option value="CSS3">
+                        <option value="JavaScript">
+                        <option value="Java">
+                        <option value="Python">
+                    </datalist><br><br>
+
+                    <!-- 20. <textarea> for user comments -->
+                    <label for="comments">Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+                    <!-- 15. Submit button -->
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <br>
+
+        <!-- 24. <span> tag to highlight text -->
+        <!-- 47. <mark> tag to highlight important text -->
+        <p>This is a paragraph where <span style="color: red;">some text is highlighted using span</span> and <mark>important text using mark</mark>.</p>
+
+        <!-- 29. <article> tag to create a blog post -->
+        <article>
+            <h3>Blog Post: Learning HTML</h3>
+            <p>HTML is easy to learn and essential for building websites.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- SECTION 3: ADVANCED LEVEL (Questions 31 to 50) -->
+    <section id="advanced">
+        <h2>Advanced Level</h2>
+
+        <!-- 31. HTML5 video player with controls -->
+        <h3>Video Player</h3>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- 32. Audio file with controls -->
+        <h3>Audio Player</h3>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- 33. <iframe> tag to embed YouTube video -->
+        <h3>Embedded YouTube Video</h3>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+
+        <!-- 41. Image gallery with multiple images -->
+        <h3>Image Gallery</h3>
+        <img src="image1.jpg" alt="Gallery Image 1" width="100">
+        <img src="image2.jpg" alt="Gallery Image 2" width="100">
+
+        <!-- 42 & 50. Collapsible section / FAQ using <details> and <summary> -->
+        <h3>FAQ Section</h3>
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML stands for HyperText Markup Language used for creating web pages.</p>
+        </details>
+        <details>
+            <summary>What is the abbreviation HTML?</summary>
+            <!-- 44. <abbr> tag -->
+            <p><abbr title="HyperText Markup Language">HTML</abbr> is standard markup language.</p>
+        </details>
+
+        <br>
+
+        <!-- 48. Simple Landing Page Layout -->
+        <div style="border: 1px solid black; padding: 10px;">
+            <h3>Landing Page Section</h3>
+            <p>Welcome to our platform!</p>
+        </div>
+
+        <br>
+
+        <!-- 45. Pricing Table -->
+        <h3>Pricing Table</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>Pro</td>
+                <td>$10/mo</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 46. HTML Resume with different sections -->
+    <section id="resume">
+        <h2>HTML Resume</h2>
+        <h3>Mohd Yameen</h3>
+        <p>Email: yameen@example.com | Phone: 1234567890</p>
+        
+        <h4>Education</h4>
+        <p>Polytechnic Diploma in Computer Science Engineering</p>
+        
+        <h4>Skills</h4>
+        <p>HTML, CSS, Java, C, C++</p>
+    </section>
+
+    <br>
+
+    <!-- 40. Anchor link that scrolls to specific section on page -->
+    <p><a href="#top">Back to Top</a></p>
+
+    <!-- 35. <footer> tag -->
+    <footer>
+        <p>&copy; 2026 HiTech Mentor. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

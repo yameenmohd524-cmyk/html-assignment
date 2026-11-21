@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    </head>
+    <body>
+        <h1>Welcome to HTML</h1>
+        <p> 
+         HTML HyperText <mark>Markup Language</mark> is the standard language used to create and structure <br>web pages on the internet.   
+        </p>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+        <ol type="A">
+<li>Step 1</li>
+<li>Step 2</li>
+<li>Step 3</li>
+        </ol>
+        <!-- section 1 -->
+         <section>
+            <img src="/images/photo1.jpg" height="100" width="100">
+         </section>
+         <br>
+         <!-- section 2 -->
+          <section>
+            <a href="https://www.facebook.com"><strong>Go to facebook</strong></a>
+          </section>
+          <br>
+          <!-- Intermediate Level -->
+           <section>
+            <h2>Student Details Table</h2>
+            <table border="1" height="200" width="400" cellpading="50" cellspacing="0" bgcolor="pink" bordercolor="black" form="box">
+            <tr align="center">
+                <th bgcolor="white">Roll No</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th bgcolor="yellow"> District</th>
+            </tr>
+            <tr align="center">
+                <td bgcolor="white">1</td>
+            <td>Mo Yameen</td>
+            <td>10th</td>
+            <td>Rampur</td>
+            </tr>
+            <tr align="center">
+                <td bgcolor="yellow">2</td>
+            <td>Asad Ali</td>
+            <td>12th</td>
+            <td>Noida</td>
+            </tr>
+            <!-- Table Row with colspan Example -->
+             <tr>
+                <td align="center" colspan="3"> Status: Student</td>
+                <td align="center" >Active</td>
+             </tr>
+            </table>
+           </section>
+           <!-- Intermediate level: Form (Questions 14 - 21) -->
+            <section>
+                <h2>User Registration Form</h2>
+                <form>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <!-- Name Field -->
+                         <label for="username">Name:</label><br>
+                         <input type="text" name="username" id="username"><br><br>
+                         <!-- Email field -->
+                          <label for="email"> Email:</label><br>
+                          <input type="text" id="email" name="email" placeholder="Enter Email" required><br><br>
+                          <!-- Password Field -->
+                           <label for="Password">Password:</label><br>
+                           <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+                           <!-- Radio Buttons (Gender) -->
+                            <label>Gender:</label><br>
+                            <input type="radio" id="male" name="male" value="gender">
+                            <label for="Male">Male</label>
+                            <input type="radio" id="Female" name="female" value="gender">
+                            <label for="female">Female</label><br><br>   
+                        <!-- Droupdown List (Country Option)                          -->
+<label for="country">Country:</label><br>
+<select id="country" name="country">
+    <option value="india">India</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    <option value="australia">Australia</option>
+</select><br><br>
+<!-- CheckBox Hobbies -->
+ <label>Hobbies:</label><br>
+ <input type="checkbox" id="coding" name="hobby" value="coding">
+ <label for="Coding">Coding</label>
+ <input type="checkbox" id="Doing Exacise" name="hobby" value="Doing Exacise">
+ <label for="Donig Exacise">Doing Exacise</label>
+ <input type="checkbox" id="Long Drive" name="hobby" value="Long Drive">
+ <label for="Long Drive">Long Drive</label>
+ <input type="checkbox" id="Reading" name="hobby" value="Reading">
+ <label for="Reading">Reading</label><br><br>
+ <!-- textarea Comments -->
+  <label for="comments">Comments</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+  <!-- submit Button -->
+   <input type="submit" value="submit">
+                    </fieldset>
+                </form>
+            </section>
+            <!-- Questions Level 22-30 -->
+             <nav>
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+             </nav>
+             <!-- <hr> tag to separate content -->
+              <hr>
+              <!-- Multiple section using <section> -->
+                <section>
+                    <h2>Section 1: Date Input</h2>
+                    <form>
+                    <label for="date-input">Select Date:</label>
+                    <input type="date" id="date-input" name="date-input">
+                </form>
+                </section>
+                <hr>
+<!--<div> tag to create a content section-->
+    <div>
+        <h2>Section 2: Content Div</h2>
+        <!-- <span> tag to highlight text in a paragraph -->
+            <p> This is a paragraph where<span style="Background-color: yellow">This word is highlighted</span>using a span tag</p>          
+    </div>
+    <hr>
+    <!--<article> tag to create a blog post-->
+        <article>
+            <h2>Blog Post Title</h2>
+            <p>This is an article tag used for writing standalone blog content.</p>
+        </article>
+        <!-- Advanced Level start from here -->
+         <section>
+            <h2>Video Player</h2>
+            <video width="320" height="240" controls>
+                <source src="/images/video2.mp4">
+            </video>
+         </section>
+         <hr>
+         <section>
+         <!-- Audio file using with play button -->
+          <h2>Audio Player</h2>
+          <audio controls>
+            <source src="/images/audio.mp3">
+          </audio>
+          </section>
+          <hr>
+          <section>
+            <h2>Youtube Video Embed</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d9OV_youpfE?si=ByC_GLCEmp2ZjFON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </section>
+          <hr>
+          <!--Header and Footer tags -->
+          <header>
+<h2>Website Header Section</h2>
+</header>
+<footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+</footer>
+<!-- Image Gallery with multiple images -->
+<section id="section-gallery">
+    <h2>Image Gallery</h2>
+    <div style="">
+        <img src="/images/photo1.jpg" alt="gallery Image 1" width="100" height="100">
+        <img src="/images/photo3.jpg" alt="Gallery Image 2" width="100" height="100">
+    </div>
+</section>
+<!-- contact form with validation & action/method attributes -->
+ <section>
+    <h2>
+        Contact Form with Validation
+    </h2>
+    <form action="#" method="Post">
+        <label for="Name">Name(required):</label><br>
+        <input type="text" id="cname" name="cname" required><br><br>
+        <label for="cemail">Email (Formate Check):</label><br>
+        <input type="cemail" name="email " id="email" placeholder="Enter email" required><br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+ </section>
+ <hr>
+ <!-- Datalist element for auto suggestion -->
+  <section>
+  <h2>Input with Datalist</h2>
+  <label for="Browser">Choose your browser:</label>
+<input list="browsers" id="browser" name="browser">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Safari">
+    <option value="Edge">
+    <option value="Firefox">
+</datalist>
+  </section>
+  <hr>
+  <!-- Collapsible section & Faq page Using details and summary -->
+   <section id="section-faq">
+    <h2>FAQ Page & Collapsible Section</h2>
+    <details>
+        <summary>What is HTML?</summary>
+        <P>HTML stands for HyperText Markup Language, used to structure web pages.</P>
+    </details>
+    <details>
+        <summary>Is HTML easy to learn?</summary>
+        <p>Yes, HTML is beginner-friendly and easy to understand.</p>
+    </details>
+   </section>
+   <hr>
+   <!-- Abbreviation tag <abbr> -->
+    <section>
+        <h2>Abbreviation Tag</h2>
+        <p> The <abbr title="HyperText Markup Language">HTML</abbr>is standard for web development.</p>
+    </section>
+     <hr>
+     <!-- Pricing table using <table> and <th> -->
+        <section>
+        <h2> Pricing Table</h2>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic Plan</td>
+                <td>$10/Month</td>
+            </tr>
+            <tr>
+                <td>Pro Plan</td>
+                <td>$29/Month</td>
+            </tr>
+        </table>    
+        </section>
+        <hr>
+        <!-- HTML Resume with different sections -->
+         <section>
+            <h2>HTML Resume</h2>
+            <h3>Mo Yameen</h3>
+            <p>Computer Science Engineering Student</p>
+            <h4>Skills: C, C++, Advanced Java, HTML</h4>
+         </section>
+         <hr>
+         <!-- Mark tag to highlight important text -->
+          <section>
+            <h2>Mark Tag</h2>
+            <p>This is a <mark>highlight important text</mark>using the mark tag.</p>
+          </section>
+          <hr>
+          <!-- Landing Page Layout & Survey Form with multiple inputs -->
+          <section>
+            <h2>Landing Page & Survey Form</h2>
+            <p>Elcome to our simple landing page layout designed using only HTML.</p>
+            <form>
+                <label>How would you rate our website?</label><br>
+                <input type="radio" name="rating" value="good">Good<br>
+                <input type="radio" name="rating" value="excellent">Excellent<br>
+            </form>
+          </section>
+    </body>
+</html>

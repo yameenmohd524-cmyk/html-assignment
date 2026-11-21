@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Web Page
+        </title>
+        <body>
+            <h1>Pages</h1>
+            <br><br>
+            <p>Lorem ipsum <br>dolor sit amet consectetur,<br> adipisicing elit. <mark>Haider ali</mark>Maxime rerum at sapiente,<i>My Name is Mohd Yameen</i> nisi, neque repellendus dicta impedit, iste <b>Rampur</b> unde perferendis ipsum omnis inventore provident enim ipsam nulla <del> $500 </del>optio sunt dolor!
+            </p>
+            <ul type="circle"> 
+                <li>Python</li>
+                <li>Advance JaVa</li>
+                <li>SQL</li>
+            </ul>
+            <ol type="a"> 
+                <li>Hindi</li>
+                <li>English </li>
+                <li>Math </li>
+                <li>Physics</li>
+            </ol>
+            <table border="1" Height="300" Width="50" cellpadding="50" cellspacing="0"  bgcolor="Pink"  align="center" frame="box"  bordercolor="black"> 
+                <caption><b>Student Details</b></caption>
+                <tr bgcolor="blue">
+                    <th> Roll Number </th>
+                    <th>Name </th>
+                    <th>Class</th>
+                    
+                </tr>
+                <tr bgcolor="yellow" align="center">
+                    <td>1</td>
+                    <td>Raees</td>
+                    <td>10th</td>
+                    
+                </tr>
+                <tr bgcolor="white" align="center">
+                    <td>2</td>
+                    <td>faeem</td>
+                    <td>10th</td>
+                </tr>
+                <tr bgcolor="white" align="center">
+                    <td>3</td>
+                    <td>Shahid</td>
+                    <td>11th</td>
+                </tr>
+            </table>
+            <!-- form start from here -->
+             <br clear="all">
+             <main>
+                <section>
+                <div>
+<h1>Student Registration form</h1>
+                </div>
+                </section>
+             </main>
+             <form action="/submit" method="past" complete="on">
+                <label>Name:</label>
+                <input type="text"><br><br>
+                <label>Mobile Number:</label>
+                <input type="Number"><br><br>
+                <label form="Email">Email:</label>
+                <input type="email" placeholder="Enter Your Email" required><br><br>
+                <label form="Password">Password:</label>
+                <input type="password" placeholder="Enter your password" required min="5" max="20" minlength="20" maxlength="15">                
+                <br> <br>
+                <label for="file">Upload file</label>
+                <input type="file" name="file"><br><br>
+                <label for="">D.O.B:</label>
+                <input type="date"><br><br>
+        <label for="time">Time:</label>
+        <input type="Time"><br><br>
+        <input type="color"><br><br>
+        <label for="range">Range:</label>
+        <input type="Range"><br><br>
+        <label for="Search">Search:</label>
+        <input type="search"><br><br>
+        <h2>Gender</h2>
+        <label for="">Male</label>
+        <input type="radio" name="Male" value="gender"><br><br>
+        <label for="">Female</label>
+        <input type="radio" name="gender" value="Female">
+        <br><br>
+        <label for="">Other</label>
+        <input type="radio" name="gender" value="other"><br><br>
+        <h2>Hobbies</h2>
+        <label for="">Coding</label>
+        <input type="checkbox">
+        <br><br>
+        <label for="">Doing Exacise</label>
+        <input type="checkbox">
+         <br><br>
+        <label for="">Reading Books</label>
+        <input type="checkbox"> <br><br>
+<label for="city">Select city</label>
+<select name="city">
+    <option value="">Amroha</option>
+    <option value="">Sambhal</option>
+    <option value="">Rampur</option>
+    <option value="">Bilary</option>
+</select>
+             </form><br><br>
+             <!-- fieldset 1: Personal Details -->
+             <fieldset>
+                <Lagend>Personal Details:</Lagend>
+                <br><br>
+                <label for="">Name:</label>
+                <input type="text"><br><br>
+                <label for="">Mob Number:</label>
+                <input type="Number" placeholder="10 Digit Mobile number" required>
+                <br><br>
+                <label for="">Email:</label>
+                <input type="" name="email" placeholder="Enter Email" required><br><br>
+             </fieldset>
+             <br><br>
+             <!-- DataList Example -->
+              <label for="">course</label>
+              <input list="course" name="course">
+              <datalist id="course">
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">C++</option>
+                <option value="">Java</option>
+              </datalist>
+              <br><br>
+              <button type="Submite">Submite</button><br><br>
+              <!-- fieldset second start -->
+               <form action="/register" method="'post">
+<fieldset>
+    <legend>Personal information:</legend>
+    <label for="">Full Name:</label>
+    <input type="text" id="Name" name="name" placeholder="enter your name" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="Email" name="email" id="email" placeholder="Enter email" required> <br><br>
+    <label for="Password">Password:</label>
+    <input type="password" id="'password" name="Password" placeholder="Enter password" required>
+    <br><br>
+    <label for="Number">Number:</label>
+    <input type="text" name="Number" id="Phone" placeholder="Enter Please 10 digit Number" required>
+    <br><br>
+    <label for="dob">Date Of Birth:</label>
+    <input type="date" name="dob" id="dob">
+    <br><br>
+    <label for="time">Time:</label>
+    <input type="Time" name="time" id="time">
+    <br><br>
+    <label>Gender:</label>
+    <br><br>
+    <label for="">Male</label>
+    <input type="radio" name="Male" value="gender">
+    <br><br>
+    <label for="">Female</label>
+    <input type="radio" value="Female" name="Gender">
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Educational information:</legend>
+    <label for="Course">Select Course:</label>
+    <select id="Course" name="Course" required>
+     <option value="">Choose course</option>
+     <option value="html">HTML</option>
+     <option value="java">JAVA</option>
+     <option value=".net">.Net</option>  
+     <option value="python">PYTHON</option> 
+    </select>
+    <br><br>
+    <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="js"> JavaScript<br><br>
+
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+<label for="Address">Address:</label>
+<textarea id="Address" name="Address" row="4" cols="50" placeholder="Enter Address Please">
+</textarea>
+</fieldset>
+         </form>
+            
+        </body>
+    </head>
+</html>
